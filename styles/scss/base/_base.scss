@@ -1,0 +1,38 @@
+body{
+	background: $base-color;
+	text-align: center;
+}
+
+a:hover,a:link,a:active,a:link{
+	text-decoration: none;
+	color:#fff;
+}
+
+li{
+	@include box-sizing(border-box);
+}
+
+.container{
+	@include box-sizing(border-box);
+	max-width: 1170px;
+	padding:0 10px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+input,textarea,button{
+	outline: none;
+	border:0;
+}
+
+.btn{
+	background:#fff;
+	padding:15px 70px;
+	@include border-top-radius(30px);
+  @include border-bottom-radius(30px);
+	color:#612316;
+	font:18px $family-roboto-slab;
+}
+.btn-grey{
+	color:#4e5159;
+}

@@ -1,0 +1,43 @@
+.mailing-section{
+@include background(linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url("../../images/burger-bg.png") no-repeat 0 0);
+	background-size: cover;
+	color:#fff;
+}
+.mailing-content{
+	text-align: center;
+	padding: 90px 10px 110px;
+	h3{
+		font:30px/48px $family-roboto-slab;
+	}
+	p{
+		max-width: 560px;
+		width:100%;
+		margin:0 auto;
+		margin-bottom: 40px;
+		font:15px/24px $family-proximanova-light;
+	}
+}
+
+.mailing-form{
+	@include display(flex);
+	@include justify-content(space-between);
+	max-width: 510px;
+	width: 100%;
+	margin:0 auto;
+	border: 1px solid #ffffff;
+	@include border-top-radius(30px);
+  	@include border-bottom-radius(30px);
+	input{
+		@include box-sizing(border-box);
+		padding:15px 35px;
+		max-width:300px;
+		width: 50%;
+		font:18px $family-roboto-slab;
+		background:transparent;
+	}
+}
+
+.other-btn{
+	display: none;
+}

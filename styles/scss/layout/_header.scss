@@ -1,0 +1,29 @@
+.nav-header{
+	@include display(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+	min-height: 145px;
+}
+
+.nav-menu{
+	@include display(flex);
+	@include flex-wrap(wrap);
+	li{
+		a{
+			font:18px $family-roboto-slab;
+			color:$grey-color;
+			padding: 17px 30px;
+			@include border-top-radius(50px);
+  		@include border-bottom-radius(50px);
+		&:hover{
+			background:#dd4b2b;
+			color:$base-color;
+		}
+		}
+	}
+}
+
+.logo{
+	max-width: 170px;
+	max-height: 30px;
+}
